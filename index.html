@@ -1399,21 +1399,22 @@
 
     var vizList = [
 
-        "https://public.tableau.com/views/resultadoe-zact/AcompanhamentodeResultado?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/HUMANRESOURCES-HRExpensesDashboardBrasile-zact/Cockpit?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/shared/9DP8W9RJS?:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/resultadoanbima_17296940713090/AcompanhamentodeResultado?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/HUMANRESOURCES-HRExpensesDashboardBrasilmovva/Cockpit?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/ConnectedStudentReport3rdEdition/TrendsinHigherEducation?:language=pt-BR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
         "https://public.tableau.com/views/resultadomarcasmobiauto/AcompanhamentodeResultado?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/2-Templatese-zact/Template?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/3-Exemploe-zact/DashExemplo?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "https://tableau.stanford.edu/t/IRDS/views/StanfordPhDAlumniEmployment/StanfordPhDAlumniEmploymentDashboard",
+        "https://public.tableau.com/shared/4MYWMTD9P?:display_count=n&:origin=viz_share_link",
         "https://public.tableau.com/views/Howhastheworldchangedsince1962/WorldIndicators?:language=en-US&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/Ocorrnciase-zact/Reclamaes?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/Anlisedereparose-zact/AnlisedeDefeitos?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/Ocorrnciase-zact_17296964766250/Reclamaes?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/Admissions2021/OverallAdmissions?:language=en-US&:embed=y&:sid=&:redirect=auth&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link",
         "https://public.tableau.com/views/FacebookAdsDashboard_15566377846980/ExecutiveSummary?:language=en-US&:toolbar=n&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/ReresentantedeVendase-zact/RepVendasBenchmark?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/ReresentantedeVendasSantaCruz_17296970244970/RepVendasBenchmark?:language=pt-BR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
 
-        "https://public.tableau.com/views/SpendAnalyticsDashboard_16056925975720/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/FosterSpaceAssessment_forcabinet/FosterSpaceAssessment?:embed=y&:display_count=y&:sid=&:redirect=auth&:origin=viz_share_link",
         "https://public.tableau.com/views/1-DesigningEffectiveDashboardsPublic/Intro?:language=en-US&:display_count=n&:origin=viz_share_link",
-        "https://public.tableau.com/views/Embedded_Analytics/Introduo?:language=en-US&:display_count=n&:origin=viz_share_link"
+        "https://public.tableau.com/views/Embedded_Analytics/Introduo?:language=en-US&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/Desempenhocursosmovva/Desempenhocurso?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 
 
@@ -1441,16 +1442,15 @@
             launchViz(0);
             vHeight = 1200;
             launchViz(1);
-            vHeight = 2000;
+            
             //launchViz(3);
-            vHeight = 2000;
-            launchViz(5);
-            vHeight = 1200;
-
+            vHeight = 2800;
             launchViz(7);
-            vHeight = 2000;
-            launchViz(8);
+            vHeight = 1600;
+
             launchViz(10);
+           
+        
 
             //options.device = 'phone';
         } else if (window.matchMedia("(max-width: 980px)").matches) {
@@ -1464,12 +1464,10 @@
             console.log("launch1")
             launchViz(1);
             console.log("launch2")
-
-            launchViz(2);
-            //launchViz(3);
-            launchViz(4);
-
-            launchViz(6);
+            vHeight = 2400;
+            launchViz(7);
+            vHeight =2000;
+                        launchViz(10);
 
             // Launches the viz again with the new sizing at the current index of vizList.
         } else {
@@ -1486,10 +1484,12 @@
             launchViz(1);
             vHeight = 1000;
             console.log("launch2")
-
+            vHeight = 4600;
             launchViz(2);
             console.log("launch3")
             //launchViz(3);
+            //vWidth = 1000;
+            vHeight = 1000;
             launchViz(4);
             vHideToolbar = true;
             vHideTabs = true;
@@ -1502,15 +1502,22 @@
             vHideTabs = false;
             vHeight = 800;
             launchViz(7);
+            vHeight = 1800;
+            vWidth = 1000;
             launchViz(8);
+            vWidth = 1666;
             vHeight = 1000;
             launchViz(9);
             vHeight = 1000;
             launchViz(10);
             vHeight = 1000;
+            vWidth = 1000;
             launchViz(11);
+            vWidth = 1666;
             launchViz(12);
             launchViz(13);
+            launchViz(14);
+            
 
             // Launches the viz again with the new sizing at the current index of vizList.
         }
@@ -1792,13 +1799,13 @@
             
             
             
-                <div style="text-align: center;">
+         <!--        <div style="text-align: center;">
                     <div style="display: inline-block;">
                         <p> - </p>
                         <p> Abaixo um exemplo de dashboard para acompanhamento por marcas.</p>
                         <div id="vizContainer3"></div>
                     </div>
-                </div>
+                </div> -->
             
                 <div style="text-align: center;">
                     <div style="display: inline-block;">
@@ -1815,8 +1822,33 @@
                 </div>
                 <div style="text-align: center;">
                     <div style="display: inline-block;">
+                       
+                        <p> Abaixo um dashboard que acompanha as reclamações de alunos </p>
+                        <div id="vizContainer7"></div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="display: inline-block;">
                         <p> - </p>
-                        <p> Abaixo um exemplo da comunidade Tableau sobre vendas de carros em UK</p>
+                        <p> Abaixo um dashboard para acompanhamento dos Vendedores para Benchmark</p>
+                        <p>Permite um benchmark para entenderem como estão performando comparado aos pares ou outros
+                            parceiros do mesmo mercado</p>
+                        <p> - - </p>
+                        <div id="vizContainer10"></div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="display: inline-block;">
+                        <p> - </p>
+                        <p> Abaixo um dashboard para acompanhamento de alunos e disciplinas</p>
+                        <p> - - </p>
+                        <div id="vizContainer14"></div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="display: inline-block;">
+                        <p> - </p>
+                        <p> O dashboard a seguir é um exemplo da Salesforce com um estudo sobre higher education</p>
             
                         <div id="vizContainer2"></div>
                     </div>
@@ -1825,8 +1857,7 @@
                 <div style="text-align: center;">
                     <div style="display: inline-block;">
                         <p> - </p>
-                        <p> Abaixo um dashboard de um exemplo de template para que todos os usuários tenham facilidade para
-                            criar novos dashs e seguindo os padrões da empresa</p>
+                        <p> O dashboard a seguir é um exemplo da University of Stanford disponível no site da universidade</p>
             
                         <div id="vizContainer4"></div>
                     </div>
@@ -1834,7 +1865,7 @@
                 <div style="text-align: center;">
                     <div style="display: inline-block;">
                         <p> - </p>
-                        <p> Abaixo um dashboard usando o template ilustrado no dash anterior</p>
+                        <p> O dashboard a seguir é um exemplo da University of Colorado Boulder disponível no site da universidade</p>
             
                         <div id="vizContainer5"></div>
                     </div>
@@ -1852,17 +1883,11 @@
                         <div id="vizContainer6"></div>
                     </div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="display: inline-block;">
-                       
-                        <p> Abaixo um dashboard que acompanha as reclamações de clientes </p>
-                        <div id="vizContainer7"></div>
-                    </div>
-                </div>
+             
                 <div style="text-align: center;">
                     <div style="display: inline-block;">
                         <p> - </p>
-                        <p> Avalie os defeitos nas peças do carro e na linha de produção.
+                        <p> O dashboard a seguir é um exemplo da University of Florida disponível no site da universidade </p>
                         <p> -- </p>
                         <div id="vizContainer8"></div>
                     </div>
@@ -1880,24 +1905,11 @@
                         <div id="vizContainer9"></div>
                     </div>
                 </div>
+             
                 <div style="text-align: center;">
                     <div style="display: inline-block;">
                         <p> - </p>
-                        <p> Abaixo um dashboard para acompanhamento dos Vendedores para Benchmark</p>
-                        <p>Permite um benchmark para entenderem como estão performando comparado aos pares ou outros
-                            parceiros do mesmo mercado</p>
-                        <p> - - </p>
-                        <div id="vizContainer10"></div>
-                    </div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="display: inline-block;">
-                        <p> - </p>
-                        <p> Abaixo um dashboard para acompanhamento de contratos. Também disponível nos Accelerators Tableau
-                        </p>
-                        <p>Avalie e monitore seu volume de gastos
-                            Entenda melhor sua alocação de gastos em categorias de gastos e fornecedores</p>
-                        <p>Monitore e melhore os KPIs</p>
+                        <p> O dashboard a seguir é um exemplo da University of Washington disponível no site da universidade</p>
                         <div id="vizContainer11"></div>
                     </div>
                 </div>
